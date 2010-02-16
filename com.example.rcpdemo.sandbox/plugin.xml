@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.example.rcpdemo.sandbox.SandboxViewPart"
+            icon="icons/box.png"
+            id="com.example.rcpdemo.sandbox"
+            name="Sandbox"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="de.ralfebert.rcpdemo.perspective">
+         <view
+               id="com.example.rcpdemo.sandbox"
+               minimized="false"
+               relationship="stack"
+               relative="com.example.rcpdemo.update"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>
