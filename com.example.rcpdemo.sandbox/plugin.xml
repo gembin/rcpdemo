@@ -10,6 +10,13 @@
             name="Sandbox"
             restorable="true">
       </view>
+      <view
+            class="com.example.rcpdemo.sandbox.TableViewPart"
+            icon="icons/box.png"
+            id="com.example.rcpdemo.table"
+            name="Table"
+            restorable="true">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.perspectiveExtensions">
@@ -17,6 +24,13 @@
             targetID="de.ralfebert.rcpdemo.perspective">
          <view
                id="com.example.rcpdemo.sandbox"
+               minimized="false"
+               relationship="stack"
+               relative="com.example.rcpdemo.update"
+               visible="true">
+         </view>
+         <view
+               id="com.example.rcpdemo.table"
                minimized="false"
                relationship="stack"
                relative="com.example.rcpdemo.update"
